@@ -195,3 +195,89 @@
 // console.log(parseInt(a) + parseInt(b));
 
 // console.log(Math.pow(2,10));
+var arr = [
+    {
+        name: "Nodemy",
+        age: '2020'
+    },
+    {
+        name: "Thái Hà",
+        age: '2030'
+    },
+    {
+        name: "MỸ Tho",
+        age: '2040'
+    }
+];
+var newArr1 = arr.map(function(e){
+    return {name: e.name}
+});
+var newArr2 = arr.map(function(e){
+    return {name: e.name.toUpperCase()}
+});
+var date = new Date();
+
+var newArr3 = arr.map(function(e){
+    return {name: e.name, day: 'hôm nay là : ' + date.getFullYear() + "-" + (date.getMonth() + 1) + "-" +date.getDate()}
+});
+console.log(newArr1);
+console.log(newArr2);
+console.log(newArr3);
+
+var date = '11-30-2020';
+var dateArr = date.split("-");
+var newDate = dateArr[2] + "-" + dateArr[0] + "-" + dateArr[1]
+console.log(newDate);
+console.log(new Date(newDate).getMonth());
+if(new Date(newDate).getTime() > 9999999999){
+    console.log("lớn hơn");
+}else{
+    console.log("bé hơn");
+}
+
+var thang = 1;
+var soNgay
+switch(thang){
+    case 1:
+        soNgay = '30 Ngày';
+        break
+    case 2:
+       soNgay = '29 Ngày';
+       break;      
+    case 3:
+       soNgay = '31 Ngày';
+       break; 
+    case 4:
+        soNgay = '31 Ngày';
+        break;  
+    case 5:
+        soNgay = '31 Ngày';
+        break;    
+    case 6:
+        soNgay = '31 Ngày';
+        break;   
+    case 6:
+        soNgay = '31 Ngày';
+        break;    
+    case 7:
+        soNgay = '31 Ngày';
+        break; 
+    case 8:
+        soNgay = '31 Ngày';
+        break;
+    case 9:
+        soNgay = '31 Ngày';
+        break;
+    case 10:
+        soNgay = '31 Ngày';
+        break;
+    case 11:
+        soNgay = '31 Ngày';
+        break;
+    case 12:
+        soNgay = '31 Ngày';
+        break;
+}
+console.log(soNgay);
+
+
